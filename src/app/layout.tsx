@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./pico.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,12 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className="flex flex-col h-screen"
-      >
-        <div className="flex-grow p-5">
-          {children}
-        </div>
+      <body className="flex flex-col h-screen">
+        <div className="flex-grow p-5">{children}</div>
       </body>
     </html>
   );
