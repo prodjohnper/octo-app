@@ -1,0 +1,3 @@
+.dashboard {
+  @apply text-9xl underline border border-red-600 bg-pink-300;
+}
