@@ -1,5 +1,5 @@
-interface IForgotPW {
+export interface IForgotPWRequest {
   email: string;
 }
 
-export default IForgotPW;
+// export interface IForgotPWResponse {}
