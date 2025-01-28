@@ -1,5 +1,5 @@
 // THIS IS EXAMPLE CODE FOR A HOOK BEING USED, REPLACE WITH ACTUAL LOGIC
-
+"use client";
 import { useState } from "react";
 import { useAuth } from "./hooks/useAuth";
 import "./styles/dashboard.module.css";
@@ -21,7 +21,9 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div className="container">
+      <br />
+      <br />
       <h1>Login</h1>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <form onSubmit={handleSubmit}>

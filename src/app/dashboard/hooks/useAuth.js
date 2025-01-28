@@ -1,5 +1,5 @@
 // THIS IS EXAMPLE CODE FOR A HOOK, REPLACE WITH ACTUAL LOGIC
-
+"use client";
 import { useState } from "react";
 
 export function useAuth() {
