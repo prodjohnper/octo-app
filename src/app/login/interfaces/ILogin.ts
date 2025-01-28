@@ -3,28 +3,18 @@ export interface ILoginRequest {
   password: string;
 }
 
-interface ILoginResponse {
+export interface ILoginResponse {
   status: string;
   message: string;
-}
-
-export interface ILoginSuccess extends ILoginResponse {
-  data: {
+  data?: {
     userId: number;
     username: string;
     email: string;
     role: string;
     token: string;
   };
-}
-
-export interface ILoginValErr extends ILoginResponse {
-  errors: {
+  errors?: {
     email: string;
     password: string;
   };
 }
-
-export type ILoginInvalid = ILoginResponse;
-export type ILoginLockout = ILoginResponse;
-export type ILoginServerErr = ILoginResponse;
