@@ -7,6 +7,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      primary: ["var(--font-primary)"],
+    },
     extend: {
       colors: {
         background: "var(--background)",
