@@ -1,4 +1,4 @@
-import "./styles/dashboard.css";
+import "./styles/dashboard.module.css";
 
 const Pagina = () => {
   return <div className="dashboard">Heloo bichets</div>;
