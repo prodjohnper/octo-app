@@ -4,7 +4,8 @@ import "./pico.css";
 
 // Components
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Sidebar from "@/components/Sidebar";
+// import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen bg-slate-100/60">
+      <body className="flex flex-col h-screen bg-slate-100/60 font-primary">
         <Header />
-        <div className="flex-grow">{children}</div>
-        <Footer />
+          <div className="flex-grow flex">
+            <Sidebar />
+          <div className="flex-grow">
+            {children}
+          </div>
+        </div>
+        {/* <Footer /> */}
       </body>
     </html>
   );
