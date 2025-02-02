@@ -1,19 +1,9 @@
 import { ISignupRequest, ISignupResponse } from "../interfaces/ISignup";
 
 export class SignupRequestModel implements ISignupRequest {
-  constructor(
-    // public firstName: string,
-    // public lastName: string,
-    public email: string,
-    public password: string
-  ) {}
+  constructor(public data: { email: string; password: string }) {}
 }
 
 export class SignupResponseModel implements ISignupResponse {
-  constructor(
-    public detail: string,
-    public status: string
-  ) // public data?: ISignupResponse["data"],
-  // public errors?: ISignupResponse["errors"]
-  {}
+  constructor(public data: { detail: string; status: string }) {}
 }
