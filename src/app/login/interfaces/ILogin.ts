@@ -1,3 +1,5 @@
+// interfaces/ILogin.ts
+
 export interface ILoginRequest {
   email: string;
   password: string;
@@ -17,4 +19,14 @@ export interface ILoginResponse {
     email: string;
     password: string;
   };
+}
+
+export interface IValidationErrors {
+  email?: string;
+  password?: string;
+}
+
+export interface ILoginValidator {
+  validateEmail(email: string): string | undefined;
+  validatePassword(password: string): string | undefined;
 }
